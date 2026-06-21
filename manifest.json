@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Hattrick - Lista de Transferencias (NT)",
+  "version": "1.0",
+  "description": "Agrupa a los jugadores en lista de transferencia en una sección consolidada y colapsable.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://stage.hattrick.org/*",
+        "*://*.hattrick.org/*"
+      ],
+      "js": ["content-script.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
